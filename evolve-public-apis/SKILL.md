@@ -1,6 +1,6 @@
 ---
 name: evolve-public-apis
-description: Use when changing a package's public interface: renaming functions, adding or removing arguments, changing defaults or return types, or otherwise altering exported contracts; preserve compatibility, update documentation and tests, and keep API changes to their own semantic scope.
+description: "Use when changing a package's public interface: renaming functions, adding or removing arguments, changing defaults or return types, or otherwise altering exported contracts; preserve compatibility, update documentation and tests, and keep API changes to their own semantic scope."
 ---
 
 # Evolve Public APIs
@@ -436,7 +436,7 @@ Avoid churn for cosmetic improvements.
 
 This skill covers deciding that an API should change and introducing the replacement.
 
-Detailed deprecation mechanics belong in Skill 12 — Deprecate and Replace.
+Detailed deprecation mechanics belong in `deprecate-and-replace`.
 
 ---
 

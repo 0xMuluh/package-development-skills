@@ -1,6 +1,6 @@
 ---
 name: add-a-thin-adapter
-description: Use when adding package functionality that connects existing data structures to an established external implementation: build a thin domain-specific adapter, perform explicit input checks and sample alignment, delegate to the upstream implementation, and return established result types.
+description: "Use when adding package functionality that connects existing data structures to an established external implementation: build a thin domain-specific adapter, perform explicit input checks and sample alignment, delegate to the upstream implementation, and return established result types."
 ---
 
 # Add a Thin Adapter

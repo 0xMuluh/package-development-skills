@@ -1,6 +1,6 @@
 ---
 name: introduce-dependencies-conservatively
-description: Use when adding, removing, replacing, upgrading, or otherwise changing how a package depends on external software: treat dependencies as architectural decisions, prefer the existing dependency graph, depend on public contracts, and keep dependency changes in their own semantic scope.
+description: "Use when adding, removing, replacing, upgrading, or otherwise changing how a package depends on external software: treat dependencies as architectural decisions, prefer the existing dependency graph, depend on public contracts, and keep dependency changes in their own semantic scope."
 ---
 
 # Introduce Dependencies Conservatively

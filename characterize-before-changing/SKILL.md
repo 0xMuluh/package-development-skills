@@ -1,6 +1,6 @@
 ---
 name: characterize-before-changing
-description: Use before changing existing behavior that is insufficiently understood or insufficiently tested: establish what the code currently does, add focused characterization tests, then make the intended change; do not redesign poorly understood code and tests simultaneously.
+description: "Use before changing existing behavior that is insufficiently understood or insufficiently tested: establish what the code currently does, add focused characterization tests, then make the intended change; do not redesign poorly understood code and tests simultaneously."
 ---
 
 # Characterize Before Changing
@@ -367,7 +367,7 @@ For category E, prefer a regression test expressing the desired corrected behavi
 
 Only after the relevant boundary is understood should implementation change.
 
-Follow the scope defined by Skill 01 — One Semantic Change.
+Follow the scope defined by `one-semantic-change`.
 
 Do not use characterization as permission for broad refactoring.
 

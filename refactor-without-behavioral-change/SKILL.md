@@ -1,6 +1,6 @@
 ---
 name: refactor-without-behavioral-change
-description: Use when changing code structure while intentionally preserving observable behavior: state that the intended behavioral change is none, establish a behavioral boundary, provide parity evidence, and keep refactoring separate from new behavior.
+description: "Use when changing code structure while intentionally preserving observable behavior: state that the intended behavioral change is none, establish a behavioral boundary, provide parity evidence, and keep refactoring separate from new behavior."
 ---
 
 # Refactor Without Behavioral Change
@@ -75,8 +75,8 @@ It should preserve, where applicable:
 
 This skill depends especially on:
 
-- Skill 01 — One Semantic Change;
-- Skill 03 — Characterize Before Changing.
+- `one-semantic-change`;
+- `characterize-before-changing`.
 
 Before refactoring poorly tested code, establish the behavior that must remain stable.
 

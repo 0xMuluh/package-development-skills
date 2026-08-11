@@ -1,6 +1,6 @@
 ---
 name: design-with-existing-representations
-description: Use when deciding how data, results, metadata, configuration, or state should be represented in a package: prefer vectors, matrices, data frames, lists, established domain containers, and existing result classes; a new class or representation must be earned by a concrete current problem.
+description: "Use when deciding how data, results, metadata, configuration, or state should be represented in a package: prefer vectors, matrices, data frames, lists, established domain containers, and existing result classes; a new class or representation must be earned by a concrete current problem."
 ---
 
 # Design with Existing Representations

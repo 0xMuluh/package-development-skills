@@ -1,6 +1,6 @@
 ---
 name: fix-one-bug
-description: Use when correcting a specific defect in existing software: describe the observable bug independently of the fix, add a regression test reproducing the failure, implement the narrowest sufficient fix, and preserve unrelated behavior.
+description: "Use when correcting a specific defect in existing software: describe the observable bug independently of the fix, add a regression test reproducing the failure, implement the narrowest sufficient fix, and preserve unrelated behavior."
 ---
 
 # Fix One Bug
@@ -57,10 +57,10 @@ and unrelated behavior remains unchanged.
 
 This skill assumes the principles from:
 
-- Skill 00 — Core Development Philosophy;
-- Skill 01 — One Semantic Change;
-- Skill 02 — Reuse Before Implementing;
-- Skill 03 — Characterize Before Changing.
+- `core-development-philosophy`;
+- `one-semantic-change`;
+- `reuse-before-implementing`;
+- `characterize-before-changing`.
 
 In particular:
 

@@ -1,6 +1,6 @@
 ---
 name: migrate-functionality-without-redesign
-description: Use when moving functionality from one package, module, namespace, file, or subsystem to another while preserving existing behavior: migrate first, verify parity, then redesign later in separate changes; never combine move, rename, redesign, and optimization in one step.
+description: "Use when moving functionality from one package, module, namespace, file, or subsystem to another while preserving existing behavior: migrate first, verify parity, then redesign later in separate changes; never combine move, rename, redesign, and optimization in one step."
 ---
 
 # Migrate Functionality Without Redesign
@@ -75,10 +75,10 @@ unless one of those changes is strictly required for the move.
 
 This skill depends especially on:
 
-- Skill 01 — One Semantic Change;
-- Skill 03 — Characterize Before Changing;
-- Skill 05 — Design With Existing Representations;
-- Skill 07 — Introduce Dependencies Conservatively.
+- `one-semantic-change`;
+- `characterize-before-changing`;
+- `design-with-existing-representations`;
+- `introduce-dependencies-conservatively`.
 
 Migration is often safest as a sequence of PRs rather than one large cross-package rewrite.
 
@@ -678,7 +678,7 @@ After callers have transitioned, source cleanup may include:
 
 Do this only after evidence shows they are no longer required.
 
-Use Skill 09 — Remove Proven Dead Code.
+Use `remove-proven-dead-code`.
 
 ---
 

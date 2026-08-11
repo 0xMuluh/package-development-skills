@@ -1,6 +1,6 @@
 ---
 name: core-development-philosophy
-description: Use as the default engineering philosophy for developing, extending, updating, and maintaining software packages: smallest conceptual change, reuse before implementing, one semantic change per PR, preserve unrelated behavior, avoid speculative abstractions, prefer explicit behavior. Applies to new package development, feature work, bug fixing, refactoring, API evolution, dependency changes, migration, and documentation.
+description: "Use as the default engineering philosophy for developing, extending, updating, and maintaining software packages: smallest conceptual change, reuse before implementing, one semantic change per PR, preserve unrelated behavior, avoid speculative abstractions, prefer explicit behavior. Applies to new package development, feature work, bug fixing, refactoring, API evolution, dependency changes, migration, and documentation."
 ---
 
 # Core Development Philosophy

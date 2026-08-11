@@ -1,6 +1,6 @@
 ---
 name: document-a-real-workflow
-description: Use when creating or revising package documentation that teaches users how to accomplish a real task: organize examples as a scientific or user question, small setup, a few package functions, a standard result, and interpretation; make the package look as simple as it is intended to be.
+description: "Use when creating or revising package documentation that teaches users how to accomplish a real task: organize examples as a scientific or user question, small setup, a few package functions, a standard result, and interpretation; make the package look as simple as it is intended to be."
 ---
 
 # Document a Real Workflow

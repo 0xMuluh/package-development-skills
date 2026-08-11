@@ -1,6 +1,6 @@
 ---
 name: test-at-the-behavioral-boundary
-description: Use when adding or revising tests for package behavior: test externally meaningful behavior such as accepted inputs, outputs, dimensions, names, classes, alignment, metadata, and error conditions; avoid freezing private helper structure or incidental implementation details.
+description: "Use when adding or revising tests for package behavior: test externally meaningful behavior such as accepted inputs, outputs, dimensions, names, classes, alignment, metadata, and error conditions; avoid freezing private helper structure or incidental implementation details."
 ---
 
 # Test at the Behavioral Boundary

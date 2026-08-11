@@ -1,6 +1,6 @@
 ---
 name: one-semantic-change
-description: Use when planning, implementing, reviewing, or revising a pull request to enforce one semantic purpose per PR: write scope contracts with problem, intended change, non-goals, and behavioral boundary; justify every changed line; split entangled or independent changes; review for scope creep and formatting noise.
+description: "Use when planning, implementing, reviewing, or revising a pull request to enforce one semantic purpose per PR: write scope contracts with problem, intended change, non-goals, and behavioral boundary; justify every changed line; split entangled or independent changes; review for scope creep and formatting noise."
 ---
 
 # One Semantic Change

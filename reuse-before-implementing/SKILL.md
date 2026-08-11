@@ -1,6 +1,6 @@
 ---
 name: reuse-before-implementing
-description: Use before adding new code, new abstractions, new dependencies, new classes, new helpers, or new infrastructure: determine whether the behavior already exists in the language, standard library, package's public API, existing dependencies, or ecosystem; prefer delegation over reimplementation.
+description: "Use before adding new code, new abstractions, new dependencies, new classes, new helpers, or new infrastructure: determine whether the behavior already exists in the language, standard library, package's public API, existing dependencies, or ecosystem; prefer delegation over reimplementation."
 ---
 
 # Reuse Before Implementing

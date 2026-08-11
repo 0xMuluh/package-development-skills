@@ -1,6 +1,6 @@
 ---
 name: remove-proven-dead-code
-description: Use when removing code, helpers, branches, files, dependencies, exports, tests, or compatibility paths believed to be unused or obsolete: delete only with evidence that the code is unused, replaced, unreachable, or unsupported by the public contract; delete one coherent group at a time.
+description: "Use when removing code, helpers, branches, files, dependencies, exports, tests, or compatibility paths believed to be unused or obsolete: delete only with evidence that the code is unused, replaced, unreachable, or unsupported by the public contract; delete one coherent group at a time."
 ---
 
 # Remove Proven Dead Code
@@ -66,9 +66,9 @@ Dead-code removal should reduce maintenance surface without altering supported b
 
 This skill depends especially on:
 
-- Skill 01 — One Semantic Change;
-- Skill 03 — Characterize Before Changing;
-- Skill 08 — Refactor Without Behavioral Change.
+- `one-semantic-change`;
+- `characterize-before-changing`;
+- `refactor-without-behavioral-change`.
 
 A dead-code-removal PR should generally state:
 

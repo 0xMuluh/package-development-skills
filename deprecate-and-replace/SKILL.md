@@ -1,6 +1,6 @@
 ---
 name: deprecate-and-replace
-description: Use when retiring a public API, argument, behavior, representation, or package location and replacing it with a preferred alternative: plan the deprecation path, warn users, keep compatibility during transition, and avoid breaking existing callers.
+description: "Use when retiring a public API, argument, behavior, representation, or package location and replacing it with a preferred alternative: plan the deprecation path, warn users, keep compatibility during transition, and avoid breaking existing callers."
 ---
 
 # Deprecate and Replace
@@ -72,9 +72,9 @@ The deprecated interface should usually become a compatibility layer, not a seco
 
 This skill follows naturally from:
 
-- Skill 01 — One Semantic Change;
-- Skill 10 — Migrate Functionality Without Redesign;
-- Skill 11 — Evolve Public APIs.
+- `one-semantic-change`;
+- `migrate-functionality-without-redesign`;
+- `evolve-public-apis`.
 
 Use this skill after a replacement interface has been chosen.
 
@@ -280,7 +280,7 @@ remove compatibility code
 remove dependency only if now proven unused
 ```
 
-Use Skill 09 — Remove Proven Dead Code where applicable.
+Use `remove-proven-dead-code`.
 
 ---
 
