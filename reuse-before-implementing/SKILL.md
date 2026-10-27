@@ -202,6 +202,9 @@ Domain ecosystem:
 Upstream implementation:
 <existing capability or "none suitable">
 
+Existing work:
+<open PR, branch, issue, or sibling package covering it, or "none found">
+
 Decision:
 <reuse / adapt / implement locally / add dependency / propose upstream change>
 ```
@@ -209,6 +212,23 @@ Decision:
 This need not be long.
 
 It must be deliberate.
+
+---
+
+## Check Existing Work First
+
+Reuse also applies to work that is not yet released.
+
+Before starting, search:
+
+- open and recently closed PRs in the package;
+- remote branches;
+- related issues and the PRs linked to them;
+- sibling packages in the same ecosystem.
+
+If the behavior already exists or is in progress elsewhere, build on it or point to it.
+
+Do not start a parallel implementation.
 
 ---
 

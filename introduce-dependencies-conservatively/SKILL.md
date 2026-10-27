@@ -302,6 +302,7 @@ An optional dependency should not become accidentally required because:
 
 - a top-level import references it;
 - examples run unconditionally;
+- tests call it without skipping when it is unavailable;
 - package initialization calls it;
 - a helper used by core functions assumes it exists;
 - documentation tooling loads it globally.

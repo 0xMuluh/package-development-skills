@@ -303,6 +303,26 @@ Do not immediately "fix" an unattributed failure.
 
 ---
 
+# Validate Against the Current Base
+
+Validation is only meaningful against the code the change will be merged into.
+
+Before validating:
+
+- fetch the base branch;
+- start new work from the current base branch;
+- merge the current base into an open PR that is behind it;
+- use current development versions of direct dependencies.
+
+When several PRs are open at once, merging the base into each of them often conflicts on version and changelog lines.
+
+After resolving such conflicts:
+
+- confirm that the diff against the base contains only the PR's own changes;
+- re-run the tests for files changed by both the PR and the new base commits.
+
+---
+
 # Baseline Comparison
 
 When a broad check fails unexpectedly, compare the same check against the base
@@ -349,6 +369,10 @@ Examples:
 Regenerate only artifacts directly required by the intended change.
 
 Do not use regeneration as permission to update unrelated generated content.
+
+When the local generator version differs from the one the repository uses,
+regeneration may rewrite unrelated files, formatting, or recorded tool versions.
+Keep only the generated changes that the intended change requires.
 
 Review generated diffs.
 
