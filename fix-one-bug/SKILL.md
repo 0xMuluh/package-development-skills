@@ -169,7 +169,12 @@ Check:
 - public API contract;
 - established ecosystem behavior;
 - issue description;
+- the pull request and discussion that introduced the code;
 - relevant historical behavior if necessary.
+
+The pull request that introduced the code often records why it behaves as it
+does, for example why arguments are named the way they are. A fix that
+contradicts that intent needs a stated reason.
 
 Do not "fix" behavior that is surprising but intentional.
 

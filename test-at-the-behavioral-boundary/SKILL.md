@@ -476,6 +476,21 @@ Poor:
 "uses altExps instead of alExps"
 ```
 
+### Changing an Existing Regression Test
+
+When a regression test is rewritten, combined with another test, simplified
+or made "more robust", run it again against the code before the fix. It must
+still fail.
+
+Changes that look harmless can remove the failure condition, for example:
+
+- qualifying a function with its namespace when the bug was about name lookup;
+- mocking the component that caused the failure;
+- changing the backend, environment or data so the failing path is no longer
+  reached.
+
+A regression test that passes on the broken code no longer protects anything.
+
 ---
 
 ## Characterization Tests
