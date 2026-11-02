@@ -89,7 +89,16 @@ Out of scope:
 
 Conventions:
 <project rules the delegate must follow: naming, argument names, style,
- documentation, which skills apply>
+ documentation, which skills apply; how generated files are produced (do not
+ hand-edit files a generator owns); the version bump the project expects>
+
+Simplicity:
+<no repeated logic, no guards that cannot fail, base idioms over hand-written
+ loops; the reviewer will send back known duplication>
+
+Test data:
+<the real example datasets the package family uses in its tests and
+ examples; constructed objects only for cases real data cannot express>
 
 Acceptance checks:
 <exact commands that must pass, and tests that must fail on the old code>
@@ -123,8 +132,10 @@ In particular:
 
 - read the diff, not the delegate's working log;
 - treat every statement in the handoff note as an unverified claim;
-- run the acceptance checks yourself;
+- run the acceptance checks yourself, including the full package check, not
+  only the tests;
 - check that new or changed tests fail on the old code;
+- run a separate simplicity pass (`review-a-pull-request`, Step 7);
 - revert regenerated files the task did not require;
 - check names and arguments against the existing code, not against the brief alone.
 

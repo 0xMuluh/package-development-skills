@@ -143,11 +143,33 @@ Check, where relevant:
 - renamed or removed exported functions are deprecated if they were released;
 - defaults and argument names are unchanged unless the change is about them;
 - documentation, examples and NEWS match the new behavior;
-- version and changelog follow project policy.
+- version and changelog follow project policy. An unchanged version can also
+  make CI skip reinstalling the package, so new dependencies are never
+  installed.
 
 ---
 
-### Step 7 — Write the Review
+### Step 7 — Check Simplicity
+
+After correctness, read the change once more only for simplicity:
+
+- logic that is repeated, for example two helpers dispatching on the same
+  types;
+- guards that cannot fail (`!is.null(x) && y %in% x`);
+- messages or values built conditionally where a fixed one would do;
+- loops where a vectorised base idiom exists;
+- arguments, tie-breakers or branches the stated behavior does not need.
+
+Known duplication or needless code is a blocking point, not a minor one: it is
+maintained for as long as the code exists.
+
+After simplifying, re-run the tests, the deliberate breakages from Step 5 and
+the full package check. Rewrites can drop an import that only the package
+check reports.
+
+---
+
+### Step 8 — Write the Review
 
 Write each point so the author can act on it:
 
@@ -165,7 +187,7 @@ Thank the author for the parts that work. Do not pad the review with praise or w
 
 ---
 
-### Step 8 — Choose the Review State
+### Step 9 — Choose the Review State
 
 ```text
 Approve          → the stated behavior is verified, tests can fail, scope is clean
@@ -198,6 +220,12 @@ Do not request changes for style preferences that the project does not enforce.
 - [ ] Regression tests fail on the old code.
 - [ ] Rewritten tests still fail on the old code.
 - [ ] Preserved behavior was compared where relevant.
+
+### Simplicity
+
+- [ ] No repeated logic or guards that cannot fail.
+- [ ] Base idioms used where they are simpler.
+- [ ] The full package check was re-run after simplifying.
 
 ### Public behavior
 
