@@ -97,11 +97,18 @@ Simplicity:
  loops; the reviewer will send back known duplication>
 
 Test data:
-<the real example datasets the package family uses in its tests and
- examples; constructed objects only for cases real data cannot express>
+<the real example datasets the package family offers; let the delegate
+ pick the ones that show the behavior best and say why; list known
+ pitfalls of each dataset; constructed objects only for cases real data
+ cannot express>
+
+When done:
+<the one command the delegate runs (usually the tests); a stop rule: if the
+ same error survives two attempts, stop and report it>
 
 Acceptance checks:
-<exact commands that must pass, and tests that must fail on the old code>
+<for the reviewer: the full package check, deliberate breakages, tests that
+ must fail on the old code>
 
 Handoff:
 <the diff, plus at most three lines: what changed, what was run, open questions>
@@ -110,6 +117,8 @@ Not allowed:
 <commit, push, branch or history operations; new dependencies unless listed;
  changes to files outside the scope>
 ```
+
+Keep the delegate's part of the brief light. Long lists of checks for the delegate to enforce lead to endless loops, chasing one error, or editing source files in place to test deliberate breakages. The full package check, deliberate breakages and judgement calls belong to the reviewer.
 
 Keep briefs where the project keeps working notes. If the project does not track design notes, keep briefs untracked.
 
@@ -137,6 +146,8 @@ In particular:
 - check that new or changed tests fail on the old code;
 - run a separate simplicity pass (`review-a-pull-request`, Step 7);
 - revert regenerated files the task did not require;
+- remove leftovers the delegate created (check folders, tarballs, empty
+  directories, stray repositories), in the worktree and next to it;
 - check names and arguments against the existing code, not against the brief alone.
 
 Only what the reviewer observed goes into commit messages, pull request descriptions or replies.
@@ -179,7 +190,7 @@ Delegation saves the reviewer's attention only if handoffs stay small:
 
 - [ ] The task has one semantic purpose and no open design decision.
 - [ ] The brief is self-contained.
-- [ ] Acceptance checks are runnable commands.
+- [ ] The delegate runs one command and has a stop rule; acceptance checks are runnable commands for the reviewer.
 - [ ] The branch is isolated and current.
 
 ### After the handoff
